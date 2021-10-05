@@ -5,6 +5,27 @@ html {
   margin: 0;
   padding: 0;
 }
+/*
+Id has the highest specificity level, it always wins.
+only way to over-ride it is writing inline style.
+*/
+#guitars-page h1 {
+  color: #444;
+}
+#home-page h1 {
+  color: #444;
+}
+
+.inner {
+  width: 1080px;
+  margin: 0 auto;
+  border: 1px solid rgb(144, 137, 137);
+}
+
+#my-header {
+  background-color: red;
+}
+
 .my-header {
   background-color: #000;
   width: 100%;
@@ -14,6 +35,7 @@ html {
 
 .my-header .inner {
   display: block;
+  padding-top: 1 em;
 }
 .my-header .logo {
   font-weight: 800;
@@ -43,22 +65,27 @@ html {
   position: relative;
   background-color: thistle;
   background-image: url(/img/guitar-1.png);
-  height: 750px;
+  height: 420px;
   background-size: cover;
 }
-.hero-banner .inner {
-  padding-top: 200px;
+.hero-banner h1 {
+  position: absolute;
+  margin-top: 150px;
 }
 .hero-cta {
+  position: absolute;
   background-color: tomato;
   border: none;
-  padding: 1em 3em 1em 3em;
-  margin-left: 1em;
+  padding: 1em 5em 1em 5em;
+  margin-left: 230px;
+  margin-top: 210px;
+  font-size: 100%;
+  border-radius: 5px;
 }
 
 .hero-cta a {
+  color: white;
   text-decoration: none;
-  color: #fff;
 }
 
 .hero-banner h1 {
@@ -67,10 +94,6 @@ html {
 .our-guitar {
   background-color: white;
 }
-.inner {
-  width: 1080px;
-  margin: 0 auto;
-  border: 1px solid rgb(144, 137, 137);
-}
+
 .our-guitar . {
 }
